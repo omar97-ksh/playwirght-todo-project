@@ -10,8 +10,8 @@ test.describe("add new todo ",()=>{
 
 test("should be able to add new todo ",async({page,request,context})=>{
 // CREATE USER 
-
-    const user = new User();   
+    
+    const user = new User() ;   
 //Register using API
   const register=new RegisterPage(page,request,context);
   await  register.registerUsingTheAPI(user);
